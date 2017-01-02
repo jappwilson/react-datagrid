@@ -116,10 +116,10 @@ var Cell = React.createClass({
     render: function(){
         var props = this.p = this.prepareProps(this.props)
 
-        var column    = props.column
-        var textAlign = column && column.textAlign
-        var text      = props.renderText?
-            props.renderText(props.text, column, props.rowIndex):
+       var propsColumn    = props.column
+            var textAlign = propsColumn && propsColumn.textAlign
+            var propsText      = props.renderText?
+            props.renderText(props.text, propsColumn, props.rowIndex)
             props.text
 
         var contentProps = {
@@ -130,16 +130,16 @@ var Cell = React.createClass({
         }
 
         var content = props.renderCell?
-                            props.renderCell(contentProps, text, props):
-                            React.DOM.div(contentProps, text)
+                          props.renderCell(contentProps, propsText, props):
+                          React.DOM.div(contentProps, propsText)
 
         var renderProps = assign({}, props)
 
         delete renderProps.data
 
          const {contentPadding, columns, index, column, text, header,
- +          firstClassName, lastClassName, defaultStyle, rowIndex, textPadding, renderCell,
- +          renderText, ...rest} = renderProps
+           firstClassName, lastClassName, defaultStyle, rowIndex, textPadding, renderCell,
+           renderText, ...rest} = renderProps
 
         return (
             <div {...rest}>
