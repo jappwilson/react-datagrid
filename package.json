@@ -1,6 +1,6 @@
 {
   "name": "jappwilson-react-datagrid",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "React DataGrid",
   "main": "lib/index.js",
   "scripts": {
@@ -39,6 +39,7 @@
     "babel-core": "^6.1.2",
     "babel-loader": "^6.1.0",
     "babel-preset-es2015": "^6.1.2",
+    "babel-preset-stage-0": "^6.16.0",
     "babel-preset-react": "^6.1.2",
     "css-loader": "^0.9.0",
     "exports-loader": "^0.6.2",

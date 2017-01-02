@@ -119,7 +119,7 @@ var Cell = React.createClass({
        var propsColumn    = props.column
             var textAlign = propsColumn && propsColumn.textAlign
             var propsText      = props.renderText?
-            props.renderText(props.text, propsColumn, props.rowIndex)
+            props.renderText(props.text, propsColumn, props.rowIndex) :
             props.text
 
         var contentProps = {
