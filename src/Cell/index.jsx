@@ -135,10 +135,14 @@ var Cell = React.createClass({
 
         var renderProps = assign({}, props)
 
-        delete renderProps.data, renderProps.contentPadding
+        delete renderProps.data
+
+         const {contentPadding, columns, index, column, text, header,
+ +          firstClassName, lastClassName, defaultStyle, rowIndex, textPadding, renderCell,
+ +          renderText, ...rest} = renderProps
 
         return (
-            <div {...renderProps}>
+            <div {...rest}>
                 {content}
                 {props.children}
             </div>
