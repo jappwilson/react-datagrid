@@ -1,5 +1,5 @@
 {
-  "name": "jappwilson/react-datagrid",
+  "name": "@jappwilson/react-datagrid",
   "version": "1.0.0",
   "description": "React DataGrid",
   "main": "lib/index.js",
