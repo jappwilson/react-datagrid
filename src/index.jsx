@@ -420,12 +420,12 @@ module.exports = React.createClass({
             menu   : this.state.menu
         }
 
-        var loadMask
+        /*var loadMask
 
         if (props.loadMaskOverHeader){
             loadMask = <LoadMask visible={props.loading} />
         }
-
+*/
         var paginationToolbar
 
         if (props.pagination){
