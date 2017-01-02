@@ -1,6 +1,6 @@
 {
-  "name": "react-datagrid",
-  "version": "2.1.1",
+  "name": "jappwilson/react-datagrid",
+  "version": "1.0.0",
   "description": "React DataGrid",
   "main": "lib/index.js",
   "scripts": {
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zippyui/react-datagrid.git"
+    "url": "https://github.com/jappwilson/react-datagrid.git"
   },
   "keywords": [
     "grid",
