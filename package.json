@@ -61,7 +61,8 @@
     "sorty": "^1.2.0",
     "style-loader": "^0.13.0",
     "stylus-loader": "^1.4.0",
-    "webpack": "^2.2.0-rc.2"
+    "webpack": "^1.9.12",
+    "webpack-dev-server": "^1.9.0"
   },
   "dependencies": {
     "clone": "^1.0.2",
@@ -86,8 +87,7 @@
   },
   "peerDependencies": {
     "react": ">=0.14.0 || >=15.0.0",
-    "react-dom": ">=0.14.0 || >=15.0.0",
-    "webpack": "^2.2.0-rc.2"
+    "react-dom": ">=0.14.0 || >=15.0.0"
   },
   "author": "ZippyUI <contact@zippyui.com>",
   "contributors": [],
