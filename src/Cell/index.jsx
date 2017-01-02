@@ -135,7 +135,7 @@ var Cell = React.createClass({
 
         var renderProps = assign({}, props)
 
-        delete renderProps.data
+        delete renderProps.data, renderProps.contentPadding
 
         return (
             <div {...renderProps}>
