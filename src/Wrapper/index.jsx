@@ -2,7 +2,7 @@
 
 var React    = require('react')
 var assign   = require('object-assign')
-var Scroller = require('jappwilson-react-virtual-scroller')
+var Scroller = require('jappwilson-scroll')
 
 function emptyFn(){}
 
