@@ -64,7 +64,7 @@
     "normalize.css": "^3.0.3",
     "object-assign": "^4.0.1",
     "react-class": "^1.2.4",
-    "jappwilson-react-load-mask": "2.0.3",
+    "jappwilson-react-load-mask": "2.0.4",
     "react-menus": "^2.0.5",
     "react-simple-toolbar": "^1.0.5",
     "react-style-normalizer": "^1.2.8",
