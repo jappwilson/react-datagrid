@@ -1,6 +1,6 @@
 {
   "name": "jappwilson-react-datagrid",
-  "version": "2.1.14",
+  "version": "2.1.15",
   "description": "React DataGrid",
   "main": "lib/index.js",
   "scripts": {
