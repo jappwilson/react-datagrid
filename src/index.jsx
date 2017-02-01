@@ -7,7 +7,7 @@ import { findDOMNode } from 'react-dom'
 import React from 'react'
 
 var assign   = require('object-assign')
-//import LoadMask from 'react-load-mask'
+import LoadMask from 'react-load-mask'
 var Region   = require('region')
 
 var PaginationToolbar = React.createFactory(require('./PaginationToolbar'))
@@ -100,7 +100,7 @@ module.exports = React.createClass({
         withColumnMenu   : React.PropTypes.bool,
         cellEllipsis     : React.PropTypes.bool,
         sortable         : React.PropTypes.bool,
-        //loadMaskOverHeader : React.PropTypes.bool,
+        loadMaskOverHeader : React.PropTypes.bool,
         idProperty       : React.PropTypes.string.isRequired,
 
         //you can customize the column menu by specifying a factory
@@ -420,12 +420,12 @@ module.exports = React.createClass({
             menu   : this.state.menu
         }
 
-        /*var loadMask
+        var loadMask
 
         if (props.loadMaskOverHeader){
             loadMask = <LoadMask visible={props.loading} />
         }
-*/
+
         var paginationToolbar
 
         if (props.pagination){
@@ -473,9 +473,9 @@ module.exports = React.createClass({
                     {footer}
                     {resizeProxy}
                 </div>
-{/*
+
                 {loadMask}
-                */}
+
                 {renderMenu(menuProps)}
                 {bottomToolbar}
             </div>
@@ -641,8 +641,8 @@ module.exports = React.createClass({
     },
 
     prepareLoading: function(props) {
-        //var showLoadMask = props.showLoadMask || !this.isMounted() //ismounted check for initial load
-        return false //== null? showLoadMask && this.state.defaultLoading: props.loading
+        var showLoadMask = props.showLoadMask || !this.isMounted() //ismounted check for initial load
+        return false == null? showLoadMask && this.state.defaultLoading: props.loading
     },
 
     preparePaging: function(props, state) {
